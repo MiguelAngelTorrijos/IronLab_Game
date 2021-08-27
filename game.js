@@ -74,11 +74,8 @@ const Game = {
     this.audioGameSong.src = "./song/game_sound.mp3"
     this.audioYouLose.src = "./song/you_lose.mp3"
     this.audioYouWin.src = "./song/you_win.mp3"
-<<<<<<< HEAD
     this.audioDolor.src = "./song/dolor.mp3"
 
-=======
->>>>>>> 71074b6e9ccd502c1d7b33e9161367fbac42e670
     // this.counterPoints = 0
     this.setDimensions()
     this.posxflag = this.width
@@ -118,10 +115,6 @@ const Game = {
       }
 
       if (this.gametime === 58 && !this.isflag) {
-<<<<<<< HEAD
-
-=======
->>>>>>> 71074b6e9ccd502c1d7b33e9161367fbac42e670
         this.flag = new Flag(this.ctx, "./img/bandera.png", this.width, this.height)
         this.isflag = true
       }
@@ -304,10 +297,6 @@ const Game = {
         delete this.cacaolats.splice(index, 1)[0]
         obs.cacaolatCollision = true
         this.audioCacaolat.play()
-<<<<<<< HEAD
-=======
-
->>>>>>> 71074b6e9ccd502c1d7b33e9161367fbac42e670
         return true
       } else {
         return false
@@ -346,9 +335,5 @@ const Game = {
     clearInterval(this.interval)
     this.ctx.drawImage(this.imgWin, 0, 0, this.width, this.height)
     this.audioYouWin.play()
-<<<<<<< HEAD
-=======
-
->>>>>>> 71074b6e9ccd502c1d7b33e9161367fbac42e670
   }
 }
